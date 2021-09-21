@@ -1,7 +1,8 @@
 <?php
     include "connection.php";
     session_start();
-
+    header("Access-Control-Allow-Origin: * ");
+    
     $user_id=$_SESSION['user_id'];// get user id from sessions
 
     $search_input =  $_POST['search_input']; // get search input

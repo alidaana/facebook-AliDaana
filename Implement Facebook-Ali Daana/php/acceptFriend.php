@@ -1,5 +1,7 @@
 <?php
     include "connection.php";
+    header("Access-Control-Allow-Origin: * ");
+
     session_start();
     $user_id=$_SESSION['user_id'];// get user id from sessions
     // $user_id = 10;

@@ -1,6 +1,7 @@
 <?php
     include "connection.php";
     session_start();
+    header("Access-Control-Allow-Origin: * ");
 
     $error = array();
     $error_array = array();

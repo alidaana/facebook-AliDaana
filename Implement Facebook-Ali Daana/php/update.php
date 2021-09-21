@@ -1,6 +1,7 @@
 <?php
     include "connection.php";
     session_start();
+    header("Access-Control-Allow-Origin: * ");
 
     $error_array = array();// array to store error messages
     $user_id = $_SESSION["user_id"];
